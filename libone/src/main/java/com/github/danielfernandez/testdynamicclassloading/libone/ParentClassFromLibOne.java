@@ -1,10 +1,8 @@
 package com.github.danielfernandez.testdynamicclassloading.libone;
 
-public class ParentClassFromLibOne {
+public interface ParentClassFromLibOne {
 
 
-    public String message() {
-        return "Message from Parent class at LibOne";
-    }
+    public String message();
 
 }

@@ -1,5 +1,7 @@
 # Test for unexpected behaviour in JVMs dynamic class loading
 
+StackOverflow ticket (including solution): http://stackoverflow.com/questions/43792289/unexpected-behaviour-in-jvm-class-loading-classnotfoundexception-before-the-cla/43793110
+
 Tested with **Java 1.8.0_131**.
 
 This test consists of three artifacts:
