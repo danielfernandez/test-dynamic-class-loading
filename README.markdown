@@ -152,3 +152,12 @@ Caused by: java.lang.ClassNotFoundException: com.github.danielfernandez.testdyna
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	... 7 more
 ```
+
+Note a `ClassNotFoundException` is actually thrown in both cases, but in the `OK` one it happens when the
+`ChildClassFromLibTwo` is loaded when a new instance of such class is created, so it is correctly caught
+by the `catch (Throwable t)` block and execution can go on.
+
+Nevertheless, in the `KO` class the `ClassNotFoundException` is thrown **before executing `main()`**, apparently when the
+`DynamicClassLoadingAppKO` class itself is loaded, and therefore outside of the `try...catch`, so no code is
+executed at all.
+
