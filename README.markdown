@@ -1,5 +1,7 @@
 # Test for unexpected behaviour in JVMs dynamic class loading
 
+Tested with **Java 1.8.0_131**.
+
 This test consists of three artifacts:
 
    * A library called `libone` containing a class called `ParentClassFromLibOne`.
