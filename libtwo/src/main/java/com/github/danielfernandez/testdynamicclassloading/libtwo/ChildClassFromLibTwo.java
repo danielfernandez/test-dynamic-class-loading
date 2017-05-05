@@ -2,7 +2,7 @@ package com.github.danielfernandez.testdynamicclassloading.libtwo;
 
 import com.github.danielfernandez.testdynamicclassloading.libone.ParentClassFromLibOne;
 
-public class ChildClassFromLibTwo implements ParentClassFromLibOne {
+public class ChildClassFromLibTwo extends ParentClassFromLibOne {
 
 
     @Override
